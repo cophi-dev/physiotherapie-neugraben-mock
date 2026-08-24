@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Physiotherapie Neugraben – Hausbesuche in Hamburg</title>
+<meta name="description" content="Mobile Physiotherapie in Neugraben und Umgebung – direkt bei Ihnen zu Hause oder in der Einrichtung. Hans Marius Pieper. Tel. 0177 92276164.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --brand:#1c3d38;
+    --brand2:#142e2b;
+    --accent:#d7c4a0;
+    --cta-ink:#142e2b;
+    --ink:#141c1a;
+    --muted:#5b6662;
+    --paper:#f5f2eb;
+    --line:#e4ddd2;
+    --white:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    color:var(--ink);
+    background:var(--paper);
+    font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height:1.5;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  header{
+    height:72px;display:flex;align-items:center;justify-content:space-between;
+    padding:0 40px;background:#fff;border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:20;
+  }
+  .logo{display:flex;align-items:center;gap:12px;font-weight:750;font-size:17px;letter-spacing:-.02em;color:var(--brand)}
+  .mark{width:28px;height:28px;border-radius:8px;background:var(--brand);color:var(--accent);
+    display:grid;place-items:center;font-size:13px;font-weight:800;flex-shrink:0}
+  nav{display:flex;align-items:center;gap:28px;font-size:14px;color:#334155}
+  nav a:hover{color:var(--brand)}
+  .cta{
+    background:var(--accent);color:var(--cta-ink);font-weight:700;font-size:14px;
+    padding:10px 16px;border-radius:999px;letter-spacing:-.01em
+  }
+  .burger{display:none;background:none;border:0;font-size:22px;line-height:1;color:var(--brand);cursor:pointer}
+  .hero{position:relative;min-height:calc(100vh - 72px);min-height:828px;color:#fff}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+  .scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,24,22,.82) 0%,rgba(12,24,22,.48) 46%,rgba(12,24,22,.16) 100%)}
+  .copy{position:relative;z-index:1;min-height:828px;padding:56px 56px 168px;display:flex;flex-direction:column;max-width:1440px;margin:0 auto}
+  .kicker{color:var(--accent);font-size:13px;font-weight:650;letter-spacing:.16em;text-transform:uppercase}
+  h1{margin-top:14px;color:#fff;font-size:58px;line-height:1.04;letter-spacing:-.04em;font-weight:760;max-width:720px}
+  .lead{margin-top:16px;color:#e7eee9;font-size:20px;line-height:1.45;max-width:540px}
+  .actions{margin-top:28px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .btn{
+    background:var(--accent);color:var(--cta-ink);font-weight:750;font-size:16px;
+    padding:14px 22px;border-radius:12px;display:inline-block
+  }
+  .ghost{color:#fff;border:1px solid rgba(255,255,255,.35);padding:13px 20px;border-radius:12px;font-weight:600;font-size:16px;display:inline-block}
+  .chips{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap;padding-bottom:28px}
+  .chip{background:rgba(255,255,255,.12);backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(255,255,255,.18);
+    padding:8px 12px;border-radius:999px;font-size:13px}
+  .bar{
+    position:absolute;left:56px;right:56px;bottom:28px;z-index:2;
+    display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;
+    background:rgba(255,255,255,.96);border-radius:16px;padding:18px 22px;
+    box-shadow:0 12px 40px rgba(0,0,0,.18);color:var(--ink);
+    max-width:calc(1440px - 112px);margin:0 auto
+  }
+  .bar h2{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:700}
+  .bar p{font-size:16px;font-weight:650;line-height:1.35}
+  .bar .sub{font-size:14px;font-weight:500;color:#475569;margin-top:2px}
+  .bar a{font-weight:650}
+  .wrap{max-width:1080px;margin:0 auto;padding:88px 40px}
+  .sec-kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#6a7a74;font-weight:700;margin-bottom:10px}
+  h2.sec{font-size:34px;letter-spacing:-.03em;font-weight:750;line-height:1.15;color:var(--brand);max-width:20ch}
+  .sec p{margin-top:16px;font-size:18px;color:#2c3734;max-width:62ch}
+  .one-line{margin-top:18px;font-size:16px;color:var(--muted);font-weight:550}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .note{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:16px;color:#2c3734}
+  .note strong{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:700}
+  .kontakt{background:var(--brand);color:#eef4f1}
+  .kontakt h2.sec{color:#fff}
+  .kontakt p{color:#d5e0db}
+  .kontakt .sec-kicker{color:var(--accent)}
+  .kontakt-list{margin-top:28px;display:grid;gap:18px}
+  .kontakt-list a,.kontakt-list span{display:block;font-size:22px;font-weight:650;letter-spacing:-.02em;color:#fff}
+  .kontakt-list small{display:block;margin-top:4px;font-size:14px;font-weight:500;color:#c5d2cd}
+  .kontakt .btn{margin-top:28px}
+  footer{background:var(--brand2);color:#c9d4d0;padding:40px;font-size:14px}
+  .foot{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  footer strong{color:#fff;font-weight:700}
+  footer a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+  .photo-credit{margin-top:18px;font-size:12px;color:#8a9894}
+  @media (max-width: 980px){
+    header{padding:0 20px}
+    nav{display:none}
+    header:focus-within nav, header.nav-open nav{display:flex;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:16px 20px 20px;gap:14px;border-bottom:1px solid var(--line)}
+    .burger{display:block}
+    .copy{padding:36px 20px 200px;min-height:auto}
+    h1{font-size:36px}
+    .lead{font-size:17px}
+    .hero{min-height:auto}
+    .hero img{object-position:70% 35%}
+    .bar{position:relative;left:auto;right:auto;bottom:auto;margin:0 16px 20px;grid-template-columns:1fr;gap:14px}
+    .wrap{padding:56px 20px}
+    h2.sec{font-size:28px}
+    .split{grid-template-columns:1fr;gap:28px}
+    .kontakt-list a,.kontakt-list span{font-size:20px}
+    .scrim{background:linear-gradient(180deg,rgba(12,24,22,.72) 0%,rgba(12,24,22,.42) 55%,rgba(12,24,22,.55) 100%)}
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Physiotherapie Neugraben",
+  "alternateName": "Physiotherapie Neugraben, Hans Marius Pieper",
+  "description": "Mobile Physiotherapie in Neugraben und Umgebung – direkt bei Ihnen zu Hause oder in der Einrichtung.",
+  "telephone": "+4917792276164",
+  "email": "physiotherapie.neugraben@mail.de",
+  "image": "https://images.pexels.com/photos/7551608/pexels-photo-7551608.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cuxhavener Straße 467",
+    "postalCode": "21149",
+    "addressLocality": "Hamburg",
+    "addressRegion": "HH",
+    "addressCountry": "DE"
+  },
+  "areaServed": "Neugraben-Fischbek",
+  "founder": {"@type": "Person", "name": "Hans Marius Pieper"},
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  }]
+}
+</script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#start"><span class="mark">P</span> Physiotherapie Neugraben</a>
+    <button class="burger" type="button" aria-label="Menü" onclick="this.parentElement.classList.toggle('nav-open')">☰</button>
+    <nav>
+      <a href="#start">Start</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#hausbesuche">Hausbesuche</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="cta" href="tel:+4917792276164">Anrufen</a>
+    </nav>
+  </header>
+  <section class="hero" id="start">
+    <img src="https://images.pexels.com/photos/7551608/pexels-photo-7551608.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Physiotherapie als Hausbesuch: Behandlung zu Hause">
+    <div class="scrim"></div>
+    <div class="copy">
+      <div class="kicker">Hamburg-Neugraben-Fischbek · mobil</div>
+      <h1>Physiotherapie Neugraben – Hausbesuche in Hamburg</h1>
+      <p class="lead">Mobile Physiotherapie in Neugraben und Umgebung – direkt bei Ihnen zu Hause oder in der Einrichtung. Hans Marius Pieper.</p>
+      <div class="actions">
+        <a class="btn" href="tel:+4917792276164">Anrufen · 0177 92276164</a>
+        <a class="ghost" href="mailto:physiotherapie.neugraben@mail.de">Mail</a>
+      </div>
+      <div class="chips">
+        <span class="chip">Hausbesuche</span>
+        <span class="chip">Einrichtungsbetreuung</span>
+        <span class="chip">präventiv · rehabilitativ · begleitend</span>
+      </div>
+    </div>
+    <div class="bar">
+      <div>
+        <h2>Adresse</h2>
+        <p>Cuxhavener Straße 467</p>
+        <p class="sub">21149 Hamburg (Neugraben-Fischbek)</p>
+      </div>
+      <div>
+        <h2>Zeiten</h2>
+        <p>Mo–Fr 09:00–17:00</p>
+        <p class="sub">Sa/So geschlossen · sonst nach Absprache</p>
+      </div>
+      <div>
+        <h2>Telefon</h2>
+        <p><a href="tel:+4917792276164">0177 92276164</a></p>
+        <p class="sub">Hans Marius Pieper</p>
+      </div>
+    </div>
+  </section>
+  <section class="wrap" id="leistungen">
+    <p class="sec-kicker">Leistungen</p>
+    <h2 class="sec">Mobile Physiotherapie, individuell vor Ort</h2>
+    <p>Wir bieten mobile Physiotherapie in Neugraben und Umgebung – direkt bei Ihnen zu Hause oder in Ihrer Einrichtung. Individuell angepasste Therapiekonzepte, ob präventiv, rehabilitativ oder begleitend – für Ihre Gesundheit, bequem vor Ort.</p>
+    <p class="one-line">Alle Kassen und Privat.</p>
+  </section>
+  <section class="wrap" id="hausbesuche" style="padding-top:0">
+    <div class="split">
+      <div>
+        <p class="sec-kicker">Hausbesuche</p>
+        <h2 class="sec">Die Behandlung kommt zu Ihnen</h2>
+        <p>Kein Praxisbetrieb zum Vorbeigehen. Physiotherapie Neugraben arbeitet mobil: die Behandlung findet bei Ihnen zu Hause statt – oder in der Einrichtung.</p>
+        <div class="note">
+          <strong>Einrichtungen</strong>
+          Behandlung auch in der Einrichtung, wenn Sie dort leben oder betreut werden.
+        </div>
+      </div>
+      <div>
+        <p class="sec-kicker">Einzugsgebiet</p>
+        <h2 class="sec">Neugraben-Fischbek und Umgebung</h2>
+        <p>Stützpunkt: Cuxhavener Straße 467, 21149 Hamburg. Hausbesuche in Neugraben-Fischbek und der Umgebung.</p>
+        <div class="note">
+          <strong>Für Angehörige</strong>
+          Ein Rezept liegt vor? Einfach anrufen: 0177 92276164. Hans Marius Pieper klärt den Hausbesuch am Telefon.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="kontakt" id="kontakt">
+    <div class="wrap">
+      <p class="sec-kicker">Kontakt</p>
+      <h2 class="sec">Termin für den Hausbesuch: anrufen</h2>
+      <p>Mo–Fr 09:00–17:00, Samstag und Sonntag geschlossen. Andere Zeiten nach Absprache.</p>
+      <div class="kontakt-list">
+        <div>
+          <a href="tel:+4917792276164">0177 92276164</a>
+          <small>Telefon</small>
+        </div>
+        <div>
+          <a href="mailto:physiotherapie.neugraben@mail.de">physiotherapie.neugraben@mail.de</a>
+          <small>E-Mail</small>
+        </div>
+        <div>
+          <span>Cuxhavener Straße 467, 21149 Hamburg</span>
+          <small>Neugraben-Fischbek · Anfahrt zur Praxis entfällt, die Behandlung kommt zu Ihnen</small>
+        </div>
+      </div>
+      <a class="btn" href="tel:+4917792276164">Anrufen</a>
+    </div>
+  </section>
+  <footer>
+    <div class="foot">
+      <div>
+        <strong>Physiotherapie Neugraben</strong><br>
+        Hans Marius Pieper<br>
+        Cuxhavener Straße 467<br>
+        21149 Hamburg (Neugraben-Fischbek)
+      </div>
+      <div>
+        Telefon: <a href="tel:+4917792276164">0177 92276164</a><br>
+        E-Mail: <a href="mailto:physiotherapie.neugraben@mail.de">physiotherapie.neugraben@mail.de</a><br>
+        Mo–Fr 09:00–17:00 · Sa/So geschlossen
+      </div>
+    </div>
+    <p class="photo-credit">Hero-Foto: Pexels 7551608, freie Lizenz – Hausbesuch / Behandlung zu Hause. Kein Praxis-Lobby-Foto.</p>
+  </footer>
+</body>
+</html>
