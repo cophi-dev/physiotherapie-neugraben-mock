@@ -7,7 +7,7 @@ import { emailHref, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `Datenschutzerklärung | ${site.legalName}`,
-  description: `Datenschutzerklärung von ${site.legalName}: Hosting bei Vercel, keine Cookies, keine Tracking-Tools, keine eingebetteten Inhalte Dritter.`,
+  description: `Datenschutzerklärung von ${site.legalName}: Hosting bei Vercel, Kontaktformular über Resend, keine Cookies, keine Tracking-Tools.`,
   alternates: { canonical: "/datenschutz" },
   openGraph: openGraph({ title: `Datenschutzerklärung | ${site.name}`, url: "/datenschutz" }),
 };
@@ -24,7 +24,8 @@ export default function DatenschutzPage() {
       <p>
         Diese Website setzt keine Cookies, verwendet keine Analyse- oder Tracking-Tools und bindet keine Inhalte
         Dritter ein – also keine eingebettete Karte, keine Videos und keine Social-Media-Plugins. Die Schriften werden
-        vom eigenen Server ausgeliefert. Ein Kontaktformular gibt es nicht.
+        vom eigenen Server ausgeliefert. Nachrichten aus dem Kontaktformular werden über den E-Mail-Dienst Resend
+        zugestellt (siehe Abschnitt 6).
       </p>
 
       <h2>2. Verantwortliche Stelle</h2>
@@ -98,20 +99,42 @@ export default function DatenschutzPage() {
         möglich.
       </p>
 
-      <h2>6. Links zu anderen Websites</h2>
+      <h2>6. Kontaktformular</h2>
+      <p>
+        Wenn Sie uns über das Kontaktformular schreiben, verarbeiten wir die Angaben, die Sie dort machen (Name,
+        E-Mail-Adresse, freiwillig Ihre Telefonnummer und Ihre Nachricht), um Ihre Anfrage zu beantworten.
+        Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und – soweit Sie Angaben zu Ihrer
+        Gesundheit machen – Art. 9 Abs. 2 lit. a DSGVO; hängt Ihre Anfrage mit einer Behandlung zusammen, zusätzlich
+        Art. 6 Abs. 1 lit. b DSGVO. Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Die
+        Angaben werden nicht auf dieser Website gespeichert, sondern direkt als E-Mail an die Praxis weitergeleitet
+        und gelöscht, sobald Ihre Anfrage erledigt ist und keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+      </p>
+      <p>
+        Für den Versand der Formular-Nachrichten nutzen wir den E-Mail-Dienst Resend (Resend, Inc., 2261 Market Street
+        #5039, San Francisco, CA 94114, USA). Resend verarbeitet die Formulardaten sowie technische Daten wie
+        IP-Adresse und Zeitpunkt des Versands ausschließlich, um die Nachricht zuzustellen. Dabei können Daten in die
+        USA übermittelt werden; die Übermittlung erfolgt auf Grundlage der Standardvertragsklauseln der
+        EU-Kommission. Weitere Informationen:{" "}
+        <a href="https://resend.com/legal/privacy-policy" className="link" rel="noopener noreferrer">
+          Datenschutzerklärung von Resend
+        </a>
+        .
+      </p>
+
+      <h2>7. Links zu anderen Websites</h2>
       <p>
         Der Link „Route in Google Maps öffnen“ ist ein einfacher Verweis. Erst wenn Sie ihn anklicken, wird Google
         Maps (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) in einem neuen Fenster geöffnet;
         dort gelten die Datenschutzbestimmungen von Google. Vorher werden keine Daten an Google übertragen.
       </p>
 
-      <h2>7. SSL- bzw. TLS-Verschlüsselung</h2>
+      <h2>8. SSL- bzw. TLS-Verschlüsselung</h2>
       <p>
         Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung
         erkennen Sie an „https://“ in der Adresszeile Ihres Browsers.
       </p>
 
-      <h2>8. Ihre Rechte</h2>
+      <h2>9. Ihre Rechte</h2>
       <p>Sie haben jederzeit das Recht,</p>
       <ul>
         <li>unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten Daten zu erhalten (Art. 15 DSGVO),</li>

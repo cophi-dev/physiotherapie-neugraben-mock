@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ContactForm } from "@/components/ContactForm";
 import { HeroArt } from "@/components/HeroArt";
 import { PhoneLink } from "@/components/PhoneLink";
 import { Section } from "@/components/Section";
@@ -169,9 +170,17 @@ export default function HomePage() {
             <span>Anrufen</span>
             <span className="text-base font-normal">({site.phoneNote})</span>
           </a>
-          <a href={emailHref} className="btn btn-outline-light">
-            E-Mail schreiben
+          <a href="#nachricht" className="btn btn-outline-light">
+            Nachricht schreiben
           </a>
+        </div>
+
+        <div id="nachricht" className="mt-12 scroll-mt-24 rounded-lg bg-paper p-6 text-ink sm:p-8 lg:p-10">
+          <h3 className="text-2xl font-semibold lg:text-[1.75rem]">Nachricht schreiben</h3>
+          <p className="mt-1.5 text-muted">Wir antworten per E-Mail oder rufen Sie zurück.</p>
+          <div className="mt-7">
+            <ContactForm />
+          </div>
         </div>
       </Section>
     </>
